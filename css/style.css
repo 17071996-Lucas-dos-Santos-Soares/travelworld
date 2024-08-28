@@ -443,7 +443,14 @@ section.galeria {
     padding-bottom: 2rem;
 }
 .form h2 {
+    font-size: 3rem;
     text-align: center;
+    color: #fff;
+}
+.form h2 span {
+    background: #ff8800;
+    color: #fff;
+    font-weight: 300;
 }
 .form label, .form.input, .form textarea, .form button {
     display: block;
