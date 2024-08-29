@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+  span i {
+    border: 1px solid #ff8800;
+    border-radius: 100px;
+    padding: 10px;
+}
 ::-webkit-scrollbar{
 	width:10px;
 }
@@ -67,7 +72,15 @@ header .interface {
     justify-content: space-between;
     align-items: center;
 }
-
+.flag {
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    border-radius: 30px;
+}
+.language-selector {
+    margin-bottom: 20px;
+}
 header .logo img {
     max-width: 40px;
 }
