@@ -72,15 +72,7 @@ header .interface {
     justify-content: space-between;
     align-items: center;
 }
-.flag {
-    cursor: pointer;
-    width: 30px;
-    height: 20px;
-    border-radius: 30px;
-}
-.language-selector {
-    margin-bottom: 20px;
-}
+
 header .logo img {
     max-width: 40px;
 }
@@ -89,7 +81,7 @@ header .logo img.logo-preta {
     display: none;
 }
 
-header.rolar{
+header.rolar {
     background: #fff;
     padding: 1.2rem 0px;
     filter: drop-shadow(0px 0px 8px #00000061);
@@ -140,12 +132,41 @@ header .menu-desktop nav a:hover {
     transform: scale(1.05);
 }
 
-header .btn-contato button {
+header .btn-contato button{
     width: 140px;
     height: 50px;
 }
 /* menu mobile */
+header .btn-menu-mob{
+    display: none;
+}
 
+header .btn-menu-mob div{
+    background-color: #fff;
+    height: 3px;
+    margin: 10px 0;
+    transition: all .2s ease-in-out;
+}
+
+header .btn-menu-mob .line-menu-mob-1{
+    width: 30px;
+}
+header .btn-menu-mob .line-menu-mob-2{
+    width: 20px;
+}
+
+header.rolar .btn-menu-mob div{
+    background: #000;
+}
+
+header .btn-menu-mob .line-menu-mob-1.ativo1{
+    transform: rotate(45deg) translate(31%);
+}
+
+header .btn-menu-mob .line-menu-mob-2.ativo2{
+    transform: rotate(-45deg) translate(31%);
+    width: 30px;
+}
 /* fim menu mobile */
 
 section.hero-site {
@@ -158,49 +179,49 @@ section.hero-site {
     color: #fff;
 }
 
-.hero-site .interface {
+.hero-site .interface{
     display: flex;
     align-items: center;
     height: 100%;
     margin-left: 2.5rem;
 }
 
-.hero-site .txt-hero h2 {
+.hero-site .txt-hero h2{
     font-size: 4rem;
     line-height: 70px;
     font-weight: 200;
     margin-top: 2rem;
 }
 
-.hero-site .txt-hero h2 span {
+.hero-site .txt-hero h2 span{
     display: block;
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 1px #ff8800;
 }
 
-.hero-site .txt-hero p {
+.hero-site .txt-hero p{
     font-size: 1.1rem;
     font-weight: 300;
     margin: 20px 0px;
 }
 
-.hero-site .txt-hero span {
+.hero-site .txt-hero span{
     display: block;
 }
 
-.hero-site button {
+.hero-site button{
     width: 220px;
     height: 60px;
     font-size: 1rem;
 }
 
-section.vantagens {
+section.vantagens{
     width: 100%;
     padding: 80px 0px;
 }
 
-.vantagens .itens-container {
+.vantagens .itens-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -209,47 +230,47 @@ section.vantagens {
     margin-bottom: 60px;
 }
 
-.vantagens .itens-container .img-itens img {
+.vantagens .itens-container .img-itens img{
     max-width: 480px;
     margin-top: 1rem;
     box-shadow: 5px 5px 5px #ff8800;
     border-radius: 30px;
 }
-.espaco img {
+.espaco img{
     margin-left: 30px;
 }
-.vantagens .itens-container .img-itens img:hover {
+.vantagens .itens-container .img-itens img:hover{
     transition: all .5s ease-in-out;
     transform: scale(1.1);
 }
 
 
-.vantagens .itens-container .txt-itens h3 {
+.vantagens .itens-container .txt-itens h3{
     font-size: 3rem;
     font-weight: 700;
     line-height: 40px;
     margin-bottom: 1.2rem;
 }
 
-.vantagens .itens-container .txt-itens h3 span {
+.vantagens .itens-container .txt-itens h3 span{
     background: #ff8800;
     color: #fff;
     font-weight: 200;
 }
 
-section.contato {
+section.contato{
     background: #fff;
     padding: 80px 0px;
 }
 
-.txt-contato, .icons-contato {
+.txt-contato, .icons-contato{
     display: inline-block;
     width: 50%;
     margin-right: -4px;
     vertical-align: middle;
 }
 
-.contato .txt-contato h3 {
+.contato .txt-contato h3{
     font-size: 2.5rem;
     line-height: 50px;
     font-weight: 300;
@@ -257,19 +278,19 @@ section.contato {
     margin-bottom: 1.1rem;
 }
 
-.contato .txt-contato h3 span {
+.contato .txt-contato h3 span{
     display: block;
     font-weight: 700;
 }
-.contato .txt-contato p {
+.contato .txt-contato p{
     margin-left: 1rem;
 }
 
-.contato .icons-contato a {
+.contato .icons-contato a{
     text-decoration: none;
 }
 
-.contato .icons-contato button {
+.contato .icons-contato button{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -283,21 +304,21 @@ section.contato {
     cursor: pointer;
 }
 
-.contato .icons-contato button i {
+.contato .icons-contato button i{
     font-size: 22px;
 }
 
-.contato .icons-contato button:hover {
+.contato .icons-contato button:hover{
     transition: all .5s ease-in-out;
     background: #000;
 }
 
-.contato .icons-contato button:hover i, .contato .icons-contato button:hover p {
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
     transition: all .5s ease-in-out;
     color: #fff;
 }
 
-section.hoteis {
+section.hoteis{
     width: 100%;
     height: 600px;
     background-image: url(../images/hotel-bg.jpg);
@@ -310,7 +331,7 @@ section.hoteis {
     text-align: center;
 }
 
-.hoteis > .overlay {
+.hoteis > .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -320,7 +341,7 @@ section.hoteis {
     z-index: 1;
 }
 
-.hoteis > .interface {
+.hoteis > .interface{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -330,45 +351,45 @@ section.hoteis {
     position: relative;
 }
 
-.hoteis h3 {
+.hoteis h3{
     font-size: 3rem;
     font-weight: 200;
     line-height: 50px;
 }
 
-.hoteis h3 span {
+.hoteis h3 span{
     display: block;
     font-weight: 700;
 }
 
-.hoteis p {
+.hoteis p{
     margin: 20px 0px;
     font-size: 1.2rem;
     font-weight: 300;
 }
 
-.hoteis button {
+.hoteis button{
     width: 220px;
     height: 60px;
 }
 
-section.como-funciona {
+section.como-funciona{
     width: 100%;
     padding: 80px 0px;
 }
 
-.txt-funciona,.instrucoes {
+.txt-funciona,.instrucoes{
     display: inline-block;
     width: 50%;
     margin-right: -4px;
     vertical-align: top;
 }
-.como-funciona .txt-funciona {
+.como-funciona .txt-funciona{
     position: sticky;
     top: 50%;
     padding: 35px;
 }
-.como-funciona .txt-funciona h3 {
+.como-funciona .txt-funciona h3{
     font-size: 4rem;
     line-height: 60px;
     margin-left: 4rem;
@@ -376,14 +397,14 @@ section.como-funciona {
     text-align: center;
 }
 
-.como-funciona .txt-funciona h3 span {
+.como-funciona .txt-funciona h3 span{
     display: block;
     font-weight: 700;
     color: #fff;
     background: #ff8800;
 }
 
-.instrucoes .instru-box {
+.instrucoes .instru-box{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -394,27 +415,27 @@ section.como-funciona {
     padding: 1.5rem;
 }
 
-.instrucoes .instru-box img {
+.instrucoes .instru-box img{
     max-width: 100px;
 }
 
-.instrucoes .instru-box h4 {
+.instrucoes .instru-box h4{
     font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 10px;
 }
 
-.instrucoes .instru-box h4 span {
+.instrucoes .instru-box h4 span{
     font-weight: 300;
     background: #ff8800;
     color: #fff;
 }
 
-.instrucoes .instru-box h4 p {
+.instrucoes .instru-box h4 p{
     font-size: 1rem;
     line-height: 20px;
 }
-section.galeria {
+section.galeria{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,7 +444,7 @@ section.galeria {
     height: 400px;
     background: #f1f1f1;
 }
-.galeria img {
+.galeria img{
     width: 200px;
     height: 200px;
     border-radius: 200px;
@@ -431,12 +452,12 @@ section.galeria {
     gap: 1rem;
     transition: all .3s ease-in-out;
 }
-.galeria img:hover {
+.galeria img:hover{
     transition: all .3s ease-in-out;
     transform: scale(1.1);
     border-radius: 30px;
 }
-.forms {
+.forms{
     overflow: hidden;
     width: 100%;
     height: 100vh;
@@ -448,36 +469,36 @@ section.galeria {
     background-position: center;
     background-size: cover;
 }
-.form {
+.form{
     width: 100%;
     margin: 0 auto;
     max-width: 32rem;
     font-size: 1.125rem;
     padding-bottom: 2rem;
 }
-.form h2 {
+.form h2{
     font-size: 3rem;
     text-align: center;
     color: #fff;
 }
-.form h2 span {
+.form h2 span{
     background: #ff8800;
     color: #fff;
     font-weight: 300;
 }
-.form label, .form.input, .form textarea, .form button {
+.form label, .form.input, .form textarea, .form button{
     display: block;
     width: 100%;
     margin: 0 auto;
 }
 
-.form label {
+.form label{
     color: #000;
     line-height: 1;
     margin-bottom: 0.5rem;
 }
 
-.form input, .form textarea {
+.form input, .form textarea{
     font: inherit;
     padding: 0.8rem;
     margin-bottom: 1rem;
@@ -486,13 +507,13 @@ section.galeria {
     outline: none;
 }
 
-.form textarea {
+.form textarea{
     width: 100%;
     min-height: 15rem;
     resize: vertical;
 }
 
-.form button {
+.form button{
     background: #fff;
     padding: 1rem;
     color: #0d0e0f;
@@ -501,23 +522,23 @@ section.galeria {
     cursor: pointer;
 }
 
-.form button:hover {
+.form button:hover{
     transition: all .3s ease-in-out;
     background-color: #d1d1d1;
 }
 
-footer {
+footer{
     width: 100%;
     padding: 30px 0px;
     background-color: #000;
     text-align: center;
     color: #fff;
 }
-footer .top-footer a {
+footer .top-footer a{
  text-decoration: none;   
 }
 
-footer .top-footer button {
+footer .top-footer button{
     width: 50px;
     height: 50px;
     font-size: 1rem;
@@ -530,7 +551,7 @@ footer .top-footer button {
     cursor: pointer;
 }
 
-footer .top-footer button:hover {
+footer .top-footer button:hover{
     transition: all .5s ease-in-out;
     background: #fff;
     color: #000;
