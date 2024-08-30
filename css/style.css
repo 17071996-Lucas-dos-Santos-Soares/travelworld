@@ -22,11 +22,6 @@
     background: #ff8800;
     color: #f1f1f1;
 }
-:root {
-    --white: #ffff;
-    --blue1: #23468C;
-    --blue2: #0E2759;
-}
 html,body {
     background-color: #f1f1f1;
     scroll-behavior: smooth;
@@ -136,9 +131,11 @@ header .btn-contato button{
     width: 140px;
     height: 50px;
 }
-/* menu mobile */
+/* botão menu mobile */
 header .btn-menu-mob{
     display: none;
+    position: relative;
+    z-index: 9999;
 }
 
 header .btn-menu-mob div{
@@ -150,9 +147,11 @@ header .btn-menu-mob div{
 
 header .btn-menu-mob .line-menu-mob-1{
     width: 30px;
+    cursor: pointer;
 }
 header .btn-menu-mob .line-menu-mob-2{
     width: 20px;
+    cursor: pointer;
 }
 
 header.rolar .btn-menu-mob div{
@@ -161,14 +160,62 @@ header.rolar .btn-menu-mob div{
 
 header .btn-menu-mob .line-menu-mob-1.ativo1{
     transform: rotate(45deg) translate(31%);
+    background: #fff;
 }
 
 header .btn-menu-mob .line-menu-mob-2.ativo2{
     transform: rotate(-45deg) translate(31%);
     width: 30px;
+    background-color: #fff;
 }
-/* fim menu mobile */
+/* fim botão menu mobile */
 
+/* menu mobile */
+header .menu-mobile{
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    background-color: #000000cc;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all .5s ease-in-out;
+}
+
+header .menu-mobile nav ul {
+    list-style: none;
+}
+
+header .menu-mobile nav {
+    width: 100%;
+}
+
+header .menu-mobile nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1.2rem 0px;
+}
+
+header .menu-mobile nav a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all .5s ease-in-out;
+    filter: drop-shadow(0px 0px 20px #fff);
+}
+
+header .menu-mobile.abrir{
+    width: 90%;
+    height: 80vh;
+    border-radius: 10px;
+}
+
+/* fim menu mobile */
 section.hero-site {
     width: 100%;
     height: 98vh;
