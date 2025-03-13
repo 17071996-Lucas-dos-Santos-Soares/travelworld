@@ -44,10 +44,12 @@
 
     .vantagens .itens-container {
         flex-direction: column;
+        margin-top: 40px;
     }
-    
+
     .vantagens .itens-container .img-itens img {
         width: 100%;
+        margin: 0 auto;
     }
 
     .vantagens .itens-container .txt-itens p {
