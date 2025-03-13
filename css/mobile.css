@@ -184,7 +184,10 @@
     line-height: 1;
     margin-bottom: 0.5rem;
 }
-
+.form input{
+    width: 80%;
+    margin-left: 46px;
+}
 .form input, .form textarea {
     font: inherit;
     padding: 0.8rem;
@@ -207,6 +210,7 @@
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    width: 70%;
 }
 
 .form button:hover {
