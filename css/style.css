@@ -560,6 +560,7 @@ section.galeria{
     border: none;
     border-radius: 30px;
     outline: none;
+    width: 100%;
 }
 
 .form textarea{
