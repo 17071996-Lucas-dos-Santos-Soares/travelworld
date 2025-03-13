@@ -225,7 +225,7 @@ header .menu-mobile.abrir{
 section.hero-site {
     width: 100%;
     height: 98vh;
-    background-image: url(../images/bg-inicio-site.jpg);
+    background-image: url(../images/bg-inicio-site.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -375,7 +375,7 @@ section.hoteis{
     width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: url(../images/hotel-bg.jpg);
+    background-image: url(../images/hotel-bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -519,7 +519,7 @@ section.galeria{
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url(../images/hotel-responsivo.png);
+    background-image: url(../images/hotel-responsivo.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
