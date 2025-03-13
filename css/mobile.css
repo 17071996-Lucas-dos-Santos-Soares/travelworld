@@ -201,6 +201,7 @@
     width: 100%;
     min-height: 15rem;
     resize: vertical;
+    margin: 0px auto
 }
 
 .form button {
@@ -211,6 +212,7 @@
     border-radius: 30px;
     cursor: pointer;
     width: 70%;
+    margin-top: 20px;
 }
 
 .form button:hover {
